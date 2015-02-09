@@ -51,6 +51,10 @@ config USB_SERIAL_GENERIC
 	  support" be compiled as a module for this driver to be used
 	  properly.
 
+config MOXA_UPORT_1130
+	tristate "USB Moxa Uport 1130 Driver"
+	depends on USB_SERIAL
+
 config USB_SERIAL_SIMPLE
 	tristate "USB Serial Simple Driver"
 	help
